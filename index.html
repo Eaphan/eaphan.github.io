@@ -1,22 +1,39 @@
 <!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Yifan Zhang</title>
-  
   <meta name="author" content="Yifan Zhang">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="icon" href="images/z_icon.png" type="image/x-icon" / >
+  <link rel="icon" href="images/z_icon.png" type="image/x-icon">
 </head>
 
 <body>
+  <header style="width: 100%; background-color: white; border-bottom: 2px solid #EAECEF; padding: 10px 0; position: fixed; top: 0; left: 0; z-index: 1000;">
+  <!-- <header style="width: 100%; background-color: #1772d0; padding: 10px 0; position: fixed; top: 0; left: 0; z-index: 1000;"> -->
+    <div style="margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px;">
+      <a href="#home" style="color: black; font-size: 16px; font-weight: bold; text-decoration: none;">Yifan Zhang's Homepage</a>
+      
+      <nav style="display: flex;">
+        <div style="margin-left: 20px;">
+          <a href="#home" style="color: black; font-size: 16px; text-decoration: none;">Home</a>
+        </div>
+        <div style="margin-left: 20px;">
+          <a href="#publications" style="color: black; font-size: 16px; text-decoration: none;">Publications</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- This div is used to ensure that the page content is not covered by the fixed navigation bar -->
+  <div style="margin-top: 60px;"></div>
+  
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;" id="home"><tbody>
           <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
+            <td style="padding:5px;width:63%;vertical-align:middle">
               <p style="text-align:center">
                 <name>Yifan Zhang</name>
               </p>
@@ -34,16 +51,16 @@
                 <!-- <a href="https://www.linkedin.com/in/%E5%BC%82%E5%87%A1-%E5%BC%A0-15062090">LinkedIn</a> -->
               </p>
             </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
+            <td style="padding:5px;width:30%;max-width:30%">
               <a href="images/yifan_zhang.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/yifan_zhang_circle.png" class="hoverZoomLink"></a>
             </td>
           </tr>
         </tbody></table>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;" id="publications"><tbody>
           <tr>
             <td style="padding:5px;width:100%;vertical-align:middle">
-              <heading>Recent Projects</heading> <br>(*: Co-author, #: Corresponding Author)
+              <heading>Recent Projects</heading> <br>(*: Co-author, †: Corresponding Author)
             </td>
           </tr>
         </tbody></table>
@@ -87,6 +104,24 @@
           </tr>
           <tr><td><br></td></tr>
 
+          <tr>
+            <td style="padding:5px;width:30%;vertical-align:middle">
+                <img src='images/2024_SMS_HaoJing.jpg' width="220">
+            </td>
+            <td style="padding:5px;width:70%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2407.05769">
+                <papertitle>Boosting 3D Object Detection with Semantic-Aware MultiBranch Framework</papertitle>
+              </a>
+              <br>
+              Hao Jing, Anhong Wang, Lijun Zhao, Yakun Yang, Donghan Bu, Jing Zhang, <strong>Yifan Zhang</strong>, Junhui Hou
+              <br>
+              <em>Arxiv</em>, 2024
+              <br>
+              <a href="https://arxiv.org/abs/2407.05769">paper</a>
+            </td>
+          </tr>
+          <tr><td><br></td></tr>
+          
           <tr>
             <td style="padding:5px;width:30%;vertical-align:middle">
                 <img src='images/2024_STEMD.png' width="220">
