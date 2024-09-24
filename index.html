@@ -2,33 +2,44 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Yifan Zhang</title>
   <meta name="author" content="Yifan Zhang">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yifan Zhang</title>
+  <script>
+    window.addEventListener('load', function() {
+      var viewport = document.getElementById('viewport');
+      if (window.innerWidth <= 768) {
+        viewport.setAttribute('content', 'width=' + window.innerWidth + ', initial-scale=1');
+      }
+    });
+  </script>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon" href="images/z_icon.png" type="image/x-icon">
 </head>
 
 <body>
-  <header style="width: 100%; background-color: white; border-bottom: 2px solid #EAECEF; padding: 10px 0; position: fixed; top: 0; left: 0; z-index: 1000;">
+  <header style="width: 100%; background-color: rgb(248, 248, 248); border-bottom: 0.5px solid #EAECEF; padding: 10px 0; position: fixed; top: 0; left: 0; z-index: 1000;">
   <!-- <header style="width: 100%; background-color: #1772d0; padding: 10px 0; position: fixed; top: 0; left: 0; z-index: 1000;"> -->
-    <div style="margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px;">
-      <a href="#home" style="color: black; font-size: 16px; font-weight: bold; text-decoration: none;">Yifan Zhang's Homepage</a>
+    <div style="margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; max-width: 1000px;">
+      <a href="/" style="color: black; font-size: 16px; font-weight: bold; text-decoration: none;">Yifan Zhang's Homepage</a>
       
       <nav style="display: flex;">
         <div style="margin-left: 20px;">
-          <a href="#home" style="color: black; font-size: 16px; text-decoration: none;">Home</a>
+          <a href="/" style="color: black; font-size: 16px; text-decoration: none;" 
+             onmouseover="this.style.color='#0d7de1'" 
+             onmouseout="this.style.color='black'">Introduction</a>
         </div>
         <div style="margin-left: 20px;">
-          <a href="#publications" style="color: black; font-size: 16px; text-decoration: none;">Publications</a>
+          <a href="#publications" style="color: black; font-size: 16px; text-decoration: none;" 
+             onmouseover="this.style.color='#0d7de1'" 
+             onmouseout="this.style.color='black'">Publications</a>
         </div>
-      </nav>
     </div>
   </header>
   <!-- This div is used to ensure that the page content is not covered by the fixed navigation bar -->
   <div style="margin-top: 60px;"></div>
   
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <table style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;" id="home"><tbody>
@@ -37,22 +48,37 @@
               <p style="text-align:center">
                 <name>Yifan Zhang</name>
               </p>
-              <p>I am a final year Ph.D. candidate at <a href="https://www.cs.cityu.edu.hk/">CityUHK</a>, working with <a href="https://sites.google.com/site/junhuihoushomepage/">Prof. HOU Junhui</a>. Before that, I served as an research engineer at Baidu. I received B.E. degree at Huazhong University of Science and Technology and M.S. degree at Shanghai Jiao Tong University. My current research mainly focuses on the 3D perception within the context of autonomous driving.
+              <p>
+                Yifan Zhang is a final year Ph.D. candidate at <a href="https://www.cs.cityu.edu.hk/">CityUHK</a>, working with <a href="https://sites.google.com/site/junhuihoushomepage/">Prof. HOU Junhui</a>. He received his M.E. degree from Shanghai Jiao Tong University in 2019, advised by Prof. Chengliang Liu. He obtained his B.S. degree at Huazhong University of Science and Technology in 2016. He used to work in industry and had some grounding experience with algorithms. His research interests include computer vision, machine learning and robotics. He is open to collaborating with other researchers who are interested in related fields.
               </p>
-              <!-- <p>
-                More description.
+              <!-- <p style="color: #B509AC">
+                I'm currently seeking a faculty/researcher/postdoc position at leading research institutions, starting around June 2025. Feel free to contact me if you're interested in collaborating with me!
               </p> -->
+              <p>
+                His current research interests primarily focus on 
+                <li style="margin: 5px;" >
+                  <b style="color:brown">Computer Vision:</b> 3D Scene Understanding, Multi-modal Fusion, Event-based Vision.
+                </li>
+                  <li style="margin: 5px;" >
+                    <b style="color:green">Machine Learning:</b> Self-supervised Learning, Uncertainty in Artificial Intelligence, Adversarial Robustness
+                  </li>
+                   <li style="margin: 5px;" >
+                    <b style="color:orange">Intelligent Robotics:</b> Autonomous Driving Perception, Robotic Manipulation and Navigation
+                  </li>
+              </p>
               <p style="text-align:center">
                 <a href="mailto:yfzhang25@gmail.com">Email</a> &nbsp/&nbsp
                 <!-- <a href="data/CV.pdf">CV (TODO)</a> &nbsp/&nbsp -->
                 <a href="https://github.com/Eaphan/">Github</a> &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?user=FyLl6J0AAAAJ&hl=zh-CN">Scholar</a> &nbsp/&nbsp
-                <a href="https://x.com/YifanTweets">Twitter</a> &nbsp/&nbsp
+                <a href="https://x.com/YifanTweets">Twitter</a>
                 <!-- <a href="https://www.linkedin.com/in/%E5%BC%82%E5%87%A1-%E5%BC%A0-15062090">LinkedIn</a> -->
               </p>
             </td>
-            <td style="padding:5px;width:30%;max-width:30%">
-              <a href="images/yifan_zhang.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/yifan_zhang_circle.png" class="hoverZoomLink"></a>
+            <td style="padding:5px;width:15%;max-width:15%">
+              <!-- <a href="images/yifan_zhang.jpg"> -->
+              <img style="width:100%;max-width:100%" alt="profile photo" src="images/yifan_zhang_circle.png">
+              <!-- </a> -->
             </td>
           </tr>
         </tbody></table>
@@ -60,36 +86,36 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;" id="publications"><tbody>
           <tr>
             <td style="padding:5px;width:100%;vertical-align:middle">
-              <heading>Recent Projects</heading> <br>(*: Co-author, †: Corresponding Author)
+              <heading>Recent Projects</heading> <br>(*: Equal contribution &nbsp;&nbsp; †: Corresponding author)
             </td>
           </tr>
         </tbody></table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:5px;width:30%;vertical-align:middle">
-                <img src='images/2024_OLIVINE.png' width="220">
+          <!-- <tr>
+            <td style="padding:5px;width:25%;max-width:30%;vertical-align:middle">
+                <img src='images/2024_CMCR.png' width="220">
             </td>
-            <td style="padding:5px;width:70%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2405.14271">
-                <papertitle>Fine-grained Image-to-LiDAR Contrastive Distillation with Visual Foundation Models</papertitle>
+            <td style="padding:5px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2412.08973">
+                <papertitle>Is Contrastive Distillation Enough for Learning Comprehensive 3D Representations?</papertitle>
               </a>
               <br>
               <strong>Yifan Zhang</strong>, Junhui Hou
               <br>
               <em>Arxiv</em>, 2024
               <br>
-              <a href="https://arxiv.org/abs/2405.14271">paper</a> /
-              <a href="https://github.com/Eaphan/OLIVINE">code</a>
+              <a href="https://arxiv.org/abs/2412.08973">paper</a> /
+              <a href="https://github.com/Eaphan/CMCR">code</a>
             </td>
           </tr>
-          <tr><td><br></td></tr>
+          <tr><td><br></td></tr> -->
 
           <tr>
-            <td style="padding:5px;width:30%;vertical-align:middle">
+            <td style="padding:5px;width:25%;max-width:30%;vertical-align:middle">
                 <img src='images/2024_NCLR.png' width="220">
             </td>
-            <td style="padding:5px;width:70%;vertical-align:middle">
+            <td style="padding:5px;width:75%;vertical-align:middle">
               <a href="https://arxiv.org/abs/2401.12452">
                 <papertitle>Self-supervised Learning of LiDAR 3D Point Clouds via 2D-3D Neural Calibration</papertitle>
               </a>
@@ -105,16 +131,17 @@
           <tr><td><br></td></tr>
 
           <tr>
-            <td style="padding:5px;width:30%;vertical-align:middle">
+            <td style="padding:5px;width:25%;max-width:30%;vertical-align:middle">
                 <img src='images/2024_SMS_HaoJing.jpg' width="220">
             </td>
-            <td style="padding:5px;width:70%;vertical-align:middle">
+            <td style="padding:5px;width:75%;vertical-align:middle">
               <a href="https://arxiv.org/abs/2407.05769">
                 <papertitle>Boosting 3D Object Detection with Semantic-Aware MultiBranch Framework</papertitle>
               </a>
               <br>
-              Hao Jing, Anhong Wang, Lijun Zhao, Yakun Yang, Donghan Bu, Jing Zhang, <strong>Yifan Zhang</strong>, Junhui Hou
+                Hao Jing, Anhong Wang, Lijun Zhao, Yakun Yang, Donghan Bu, Jing Zhang, <strong>Yifan Zhang</strong>, Junhui Hou
               <br>
+              <!-- <em>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)</em>, 2025 -->
               <em>Arxiv</em>, 2024
               <br>
               <a href="https://arxiv.org/abs/2407.05769">paper</a>
@@ -123,17 +150,36 @@
           <tr><td><br></td></tr>
           
           <tr>
-            <td style="padding:5px;width:30%;vertical-align:middle">
+            <td style="padding:5px;width:25%;max-width:30%;vertical-align:middle">
+                <img src='images/2024_OLIVINE.png' width="220">
+            </td>
+            <td style="padding:5px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2405.14271">
+                <papertitle>Fine-grained Image-to-LiDAR Contrastive Distillation with Visual Foundation Models</papertitle>
+              </a>
+              <br>
+              <strong>Yifan Zhang</strong>, Junhui Hou
+              <br>
+              <em>Advances in Neural Information Processing Systems (NeurIPS)</em>, 2024
+              <br>
+              <a href="https://arxiv.org/abs/2405.14271">paper</a> /
+              <a href="https://github.com/Eaphan/OLIVINE">code</a>
+            </td>
+          </tr>
+          <tr><td><br></td></tr>
+
+          <tr>
+            <td style="padding:5px;width:25%;max-width:30%;vertical-align:middle">
                 <img src='images/2024_STEMD.png' width="220">
             </td>
-            <td style="padding:5px;width:70%;vertical-align:middle">
+            <td style="padding:5px;width:75%;vertical-align:middle">
               <a href="https://ieeexplore.ieee.org/document/10636791/">
                 <papertitle>Spatial-Temporal Graph Enhanced DETR Towards Multi-Frame 3D Object Detection</papertitle>
               </a>
               <br>
               <strong>Yifan Zhang</strong>, Zhiyu Zhu, Junhui Hou, Dapeng Wu
               <br>
-              <em>TPAMI</em>, 2024
+              <em>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</em>, 2024
               <br>
               <a href="https://arxiv.org/abs/2307.00347">paper</a> /
               <a href="https://github.com/Eaphan/STEMD">code</a>
@@ -145,17 +191,17 @@
           <tr><td><br></td></tr>
 
           <tr>
-            <td style="padding:5px;width:30%;vertical-align:middle">
+            <td style="padding:5px;width:25%;max-width:30%;vertical-align:middle">
                 <img src='images/2024_EventSAM.png' width="220">
             </td>
-            <td style="padding:5px;width:70%;vertical-align:middle">
+            <td style="padding:5px;width:75%;vertical-align:middle">
               <a href="https://openaccess.thecvf.com/content/CVPR2024/html/Chen_Segment_Any_Event_Streams_via_Weighted_Adaptation_of_Pivotal_Tokens_CVPR_2024_paper.html">
                 <papertitle>Segment Any Event Streams via Weighted Adaptation of Pivotal Tokens</papertitle>
               </a>
               <br>
               Zhiwen Chen, Zhiyu Zhu, <strong>Yifan Zhang</strong>, Junhui Hou, Guangming Shi, Jinjian Wu
               <br>
-              <em>CVPR</em>, 2024
+              <em>IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2024
               <br>
               <a href="https://arxiv.org/abs/2312.16222">paper</a> /
               <a href="https://github.com/zhiwen-xdu/EventSAM">code</a>
@@ -164,17 +210,17 @@
           <tr><td><br></td></tr>
 
           <tr>
-            <td style="padding:5px;width:30%;vertical-align:middle">
+            <td style="padding:5px;width:25%;max-width:30%;vertical-align:middle">
                 <img src='images/2024_Robust3DOD.jpg' width="220">
             </td>
-            <td style="padding:5px;width:70%;vertical-align:middle">
+            <td style="padding:5px;width:75%;vertical-align:middle">
               <a href="https://link.springer.com/article/10.1007/s11263-023-01934-3/">
                 <papertitle>A Comprehensive Study of the Robustness for LiDAR-Based 3D Object Detectors Against Adversarial Attacks</papertitle>
               </a>
               <br>
               <strong>Yifan Zhang</strong>, Yixuan Yuan, Junhui Hou
               <br>
-              <em>IJCV</em>, 2024
+              <em>International Journal of Computer Vision (IJCV)</em>, 2024
               <br>
               <a href="https://arxiv.org/abs/2212.10230">paper</a> /
               <a href="https://github.com/Eaphan/Robust3DOD">code</a>
@@ -183,17 +229,17 @@
           <tr><td><br></td></tr>
 
           <tr>
-            <td style="padding:5px;width:30%;vertical-align:middle">
+            <td style="padding:5px;width:25%;max-width:30%;vertical-align:middle">
                 <img src='images/2023_UPIDet.png' width="220">
             </td>
-            <td style="padding:5px;width:70%;vertical-align:middle">
+            <td style="padding:5px;width:75%;vertical-align:middle">
               <a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/a1f0c0cd6caaa4863af5f12608edf63e-Abstract-Conference.html">
                 <papertitle>Unleash the Potential of Image Branch for Cross-modal 3D Object Detection</papertitle>
               </a>
               <br>
               <strong>Yifan Zhang</strong>, Qijian Zhang, Junhui Hou, Yixuan Yuan, Guoliang Xing
               <br>
-              <em>NeurIPS</em>, 2023
+              <em>Advances in Neural Information Processing Systems (NeurIPS)</em>, 2023
               <br>
               <a href="https://arxiv.org/abs/2301.09077">paper</a> /
               <a href="https://github.com/Eaphan/UPIDet">code</a>
@@ -202,17 +248,17 @@
           <tr><td><br></td></tr>
 
           <tr>
-            <td style="padding:5px;width:30%;vertical-align:middle">
+            <td style="padding:5px;width:25%;max-width:30%;vertical-align:middle">
                 <img src='images/2023_GLENet.jpg' width="220">
             </td>
-            <td style="padding:5px;width:70%;vertical-align:middle">
+            <td style="padding:5px;width:75%;vertical-align:middle">
               <a href="https://link.springer.com/article/10.1007/s11263-023-01869-9">
                 <papertitle>GLENet: Boosting 3D Object Detectors with Generative Label Uncertainty Estimation</papertitle>
               </a>
               <br>
               <strong>Yifan Zhang</strong>, Qijian Zhang, Zhiyu Zhu, Junhui Hou, Yixuan Yuan
               <br>
-              <em>IJCV</em>, 2023
+              <em>International Journal of Computer Vision (IJCV)</em>, 2023
               <br>
               <a href="https://arxiv.org/abs/2207.02466">paper</a> /
               <a href="https://github.com/Eaphan/GLENet">code</a>
@@ -227,7 +273,7 @@
             <tr>
               <td style="padding:0px;text-align:center;width:100%;">
                 <br>
-                <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=n&d=MocJBuU8nUOktSRjiCg3rHl2bPphHgs9-zc8eeJzojg'></script>
+                <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=tt&d=MocJBuU8nUOktSRjiCg3rHl2bPphHgs9-zc8eeJzojg'></script>
                 Source code credit to <a href="https://jonbarron.info/" target="_blank">Dr. Jon Barron</a>
               </td>
             </tr>
